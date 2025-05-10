@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 681eba846519c9c445f4ee46
+steps:
+  - prompt: Refresh the webpage.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - r
+  - prompt: Assert that the page loads without errors.
+    commands:
+      - command: assert
+        expect: SMART, LOGICAL, EMPATHETIC, ZALES is visible on the page
