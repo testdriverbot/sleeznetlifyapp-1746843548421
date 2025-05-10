@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 681eba896519c9c445f4ee4e
+steps:
+  - prompt: Click on "Our Stock".
+    commands:
+      - command: hover-text
+        text: Our Stock
+        description: navigation menu item for Our Stock
+        action: click
+  - prompt: Assert that the stock listings are displayed.
+    commands:
+      - command: assert
+        expect: the stock listings for Coupes, Trucks, and Hybrids are displayed
