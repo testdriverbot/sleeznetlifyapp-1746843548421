@@ -1,0 +1,15 @@
+version: 4.2.29
+session: 681eba91a64216dcaebbb672
+steps:
+  - prompt: Scroll to the bottom of the page.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: scroll
+        direction: down
+        method: keyboard
+        amount: 300
+  - prompt: Assert that the text "© 2025 SLEEZ. All rights reserved." is visible.
+    commands:
+      - command: assert
+        expect: © 2025 SLEEZ. All rights reserved. is visible
