@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 681eba74a64216dcaebbb64c
+steps:
+  - prompt: Click on "Discover Our Mission".
+    commands:
+      - command: hover-text
+        text: Discover Our Mission
+        description: green button in the center of the page
+        action: click
+  - prompt: Assert that the user is redirected to the mission page or section.
+    commands:
+      - command: assert
+        expect: Pioneering Automotive Innovation is visible
