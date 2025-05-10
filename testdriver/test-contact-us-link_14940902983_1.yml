@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 681eba7e6519c9c445f4ee3f
+steps:
+  - prompt: Click on "Contact Us".
+    commands:
+      - command: hover-text
+        text: Contact Us
+        description: contact us link in the top navigation bar
+        action: click
+  - prompt: Assert that the contact form or contact information is displayed.
+    commands:
+      - command: assert
+        expect: the contact form with the "Send Message" button is displayed
