@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 681eba88a64216dcaebbb65c
+steps:
+  - prompt: Click on "Our Reach".
+    commands:
+      - command: hover-text
+        text: Our Reach
+        description: navigation link in the header
+        action: click
+  - prompt: Assert that the "Our Reach" section is displayed.
+    commands:
+      - command: assert
+        expect: Where We Are section is visible
