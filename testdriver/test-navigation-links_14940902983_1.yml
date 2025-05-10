@@ -1,0 +1,23 @@
+version: 4.2.29
+session: 681eba7fa64216dcaebbb654
+steps:
+  - prompt: Click on "Introducing SLEEZ".
+    commands:
+      - command: hover-text
+        text: Introducing SLEEZ
+        description: navigation link at the top of the page
+        action: click
+  - prompt: Assert that the "Introducing SLEEZ" section is displayed.
+    commands:
+      - command: assert
+        expect: SMART, LOGICAL, EMPATHETIC, ZALES
+  - prompt: Click on "Our Mission".
+    commands:
+      - command: hover-text
+        text: Our Mission
+        description: navigation link at the top of the page
+        action: click
+  - prompt: Assert that the "Our Mission" section is displayed.
+    commands:
+      - command: assert
+        expect: Pioneering Automotive Innovation
