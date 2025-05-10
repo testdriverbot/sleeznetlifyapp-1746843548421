@@ -1,0 +1,11 @@
+version: 4.2.29
+session: 681eba7f6519c9c445f4ee41
+steps:
+  - prompt: Assert that the SLEEZ logo is displayed clearly.
+    commands:
+      - command: assert
+        expect: the SLEEZ logo is displayed clearly
+  - prompt: Assert that the introductory text is readable.
+    commands:
+      - command: assert
+        expect: the introductory text is readable
