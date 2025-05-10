@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 681eba936519c9c445f4ee5e
+steps:
+  - prompt: Click on "Hot Deals".
+    commands:
+      - command: hover-text
+        text: Hot Deals
+        description: link in the navigation bar
+        action: click
+  - prompt: Assert that the hot deals section is displayed.
+    commands:
+      - command: assert
+        expect: Exclusive Offers section is displayed
