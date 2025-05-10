@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 681eba77a64216dcaebbb64e
+steps:
+  - prompt: Click on "Our Benefits".
+    commands:
+      - command: hover-text
+        text: Our Benefits
+        description: navigation link for Our Benefits in the top menu
+        action: click
+  - prompt: Assert that the "Our Benefits" section is displayed.
+    commands:
+      - command: assert
+        expect: the "Why SLEEZ Stands Out" section is displayed
